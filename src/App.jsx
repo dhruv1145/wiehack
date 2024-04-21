@@ -5,6 +5,7 @@ import Service from './components/Services/Service'
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
 import ContactUs from './components/ContactUs/ContactUs'
+import Events from './components/Events/Events'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,7 @@ function App() {
         <Route element={<Service />} path='services' />
         <Route element={<Hero />} path='whyus' />
         <Route element={<Service />} path='aboutus' />
-        <Route element={<Hero />} path='events' />
+        <Route element={<Events />} path='events' />
         <Route element={<Hero />} path='testimonial' />
         <Route element={<ContactUs />} path='contactus' />
       </Routes>

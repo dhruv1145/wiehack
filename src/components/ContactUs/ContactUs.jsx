@@ -32,7 +32,7 @@ function ContactUs() {
                 </div>
                 <div className="right-2">
                     <div className="right-content">
-                        <h2>Get in touch</h2>
+                        <h2>Get in touch ! ! !</h2>
                         <div className="address">
                             <h3><FaLocationDot /><span>Address</span></h3>
                             <p>K 103 kirti nagar 2nd floor,<br />  kirti nagar  New Delhi - 110015</p>

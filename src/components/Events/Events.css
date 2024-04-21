@@ -1,0 +1,35 @@
+.events {
+    margin: 100px 200px;
+}
+
+.container {
+    border: 2px solid #DB5324;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-calender {
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.calender svg {
+    font-size: 90px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title h2 {
+    color: #DB5324;
+
+}
