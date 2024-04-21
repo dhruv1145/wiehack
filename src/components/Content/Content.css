@@ -50,3 +50,17 @@ button a {
     text-decoration: none;
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .sub-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub-content img {
+        width: 30rem;
+        height: 10rem;
+        border: 5px solid white
+    }
+}
