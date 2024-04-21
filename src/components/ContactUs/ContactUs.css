@@ -48,7 +48,7 @@ p {
 
 }
 
-input {
+.form input {
     background-color: transparent;
     border: 1px solid white;
     padding: 1rem 5rem;

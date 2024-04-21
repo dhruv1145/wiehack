@@ -50,18 +50,25 @@
     }
 
     .header>:nth-child(2) {
-        position: fixed;
+
         width: 100%;
         z-index: 99;
     }
 
     .header-menu {
         flex-direction: column;
-        background-color: var(--appColor);
-        padding: 2rem;
+        background-color: rgb(106, 105, 105, 0.1);
     }
 
     .button {
+        display: none;
+    }
+
+    .header {
+        height: 100vh;
+    }
+
+    .logo {
         display: none;
     }
 }

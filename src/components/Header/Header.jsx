@@ -67,23 +67,14 @@ const Header = () => {
                     <li>
                         <Link
                             onClick={() => setMenuOpened(false)}
-                            to="plans"
+                            to="/joinus"
                             spy={true}
                             smooth={true}
                         >
                             Join Us
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            onClick={() => setMenuOpened(false)}
-                            to="testimonials"
-                            spy={true}
-                            smooth={true}
-                        >
-                            Testimonials
-                        </Link>
-                    </li>
+
                     <li>
                         <Link
                             onClick={() => setMenuOpened(false)}

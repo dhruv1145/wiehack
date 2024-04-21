@@ -6,6 +6,7 @@ import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
 import ContactUs from './components/ContactUs/ContactUs'
 import Events from './components/Events/Events'
+import JoinUs from './components/JoinUs/JoinUs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
         <Route element={<Events />} path='events' />
         <Route element={<Hero />} path='testimonial' />
         <Route element={<ContactUs />} path='contactus' />
+        <Route element={<JoinUs />} path='joinus' />
       </Routes>
     </BrowserRouter>
   )

@@ -1,0 +1,40 @@
+.join-us {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+.container-join {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.right-join {
+    display: flex;
+    flex-direction: columns;
+}
+
+.custom-select {
+    padding: 12px;
+}
+
+.career-input {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0.8rem 3rem;
+    font-size: 20px;
+    width: 100%;
+
+}
+
+.form-career {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

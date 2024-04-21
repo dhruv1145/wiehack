@@ -33,3 +33,9 @@
     color: #DB5324;
 
 }
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 400px;
+    }
+}
