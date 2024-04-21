@@ -4,6 +4,7 @@ import './App.css'
 import Service from './components/Services/Service'
 import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
+import ContactUs from './components/ContactUs/ContactUs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         <Route element={<Service />} path='aboutus' />
         <Route element={<Hero />} path='events' />
         <Route element={<Hero />} path='testimonial' />
+        <Route element={<ContactUs />} path='contactus' />
       </Routes>
     </BrowserRouter>
   )

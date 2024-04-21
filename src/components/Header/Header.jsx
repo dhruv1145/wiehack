@@ -87,7 +87,7 @@ const Header = () => {
                     <li>
                         <Link
                             onClick={() => setMenuOpened(false)}
-                            to="contact"
+                            to="/contactus"
                             spy={true}
                             smooth={true}
                         >
