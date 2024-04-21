@@ -20,9 +20,9 @@
 }
 
 .sub-content img {
-    width: 500px;
-    height: 400px;
-
+    width: 50rem;
+    height: 20rem;
+    border: 5px solid white
 }
 
 .title-content {
