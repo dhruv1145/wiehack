@@ -1,0 +1,52 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sub-content {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.sub-content button {
+    background-color: rgb(67, 67, 242);
+    padding: 1rem 5rem;
+    border-radius: 12px;
+    border: 1px solid black;
+
+}
+
+.sub-content img {
+    width: 500px;
+    height: 400px;
+
+}
+
+.title-content {
+    color: white;
+    background-image: url("../../assets/title.png");
+}
+
+.sub-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 10%;
+
+}
+
+.sub-right p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
