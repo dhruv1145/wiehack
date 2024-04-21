@@ -3,13 +3,14 @@ import Logo from "../../assets/logo.png";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import Bars from "../../assets/bars.png";
+import logo from '../../assets/Logo 2.png'
 
 const Header = () => {
     const mobile = window.innerWidth <= 768 ? true : false;
     const [menuOpened, setMenuOpened] = useState(false);
     return (
         <div className="header" id="header">
-            <img alt="logo here" className="logo" />
+            <img src={logo} alt="logo here" className="logo" />
             {(menuOpened === false && mobile === true) ? (
                 <div
                     style={{ backgroundColor: "var(--appColor)", padding: "0.5rem", borderRadius: "5px" }}
@@ -47,7 +48,7 @@ const Header = () => {
                     <li>
                         <Link
                             onClick={() => setMenuOpened(false)}
-                            to="reasons"
+                            to="/whyus"
                             spy={true}
                             smooth={true}
                         >
@@ -88,7 +89,7 @@ const Header = () => {
                     <li>
                         <Link
                             onClick={() => setMenuOpened(false)}
-                            to="about"
+                            to="/aboutus"
                             spy={true}
                             smooth={true}
                         >

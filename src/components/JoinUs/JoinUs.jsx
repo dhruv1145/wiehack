@@ -11,7 +11,10 @@ function JoinUs() {
             <div className="container-join">
                 <div className="left-join">
                     <h2>COACH CAREER ENQUIRY</h2>
-                    <p></p>
+                    <p>We are hiring coaches and expanding our comapany .<br />
+                        Dont miss the opportunity to be a part of something big.<br />
+                        <span className='career-span'>Get Ready to make an impact !!</span>
+                    </p>
                 </div>
                 <div className="right-join">
                     <div className="form-career">

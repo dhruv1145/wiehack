@@ -1,0 +1,42 @@
+.why-right h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.why-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+
+.why-right {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+
+.why-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 10%;
+    height: 100vh;
+}
+
+.why-left img {
+    width: 500px;
+    height: 400px;
+}
+
+.dot {
+    color: #DB5324;
+    font-size: 60px;
+}
+
+.header-line {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(60, 59, 59);
+
+}

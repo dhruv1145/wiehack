@@ -38,3 +38,16 @@
     flex-direction: column;
     gap: 2rem;
 }
+
+.left-join p {
+    font-size: 30px;
+    line-height: 2.5rem
+}
+
+.left-join h2 {
+    font-size: 40px;
+}
+
+.career-span {
+    color: #DB5324;
+}

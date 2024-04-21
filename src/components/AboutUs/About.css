@@ -1,0 +1,37 @@
+.about-right h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 100%;
+}
+
+
+.about-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 10%;
+    height: 100vh;
+}
+
+.about-left img {
+    width: 500px;
+    height: 400px;
+}
+
+.dot {
+    color: #DB5324;
+    font-size: 60px;
+}
+
+.header-line {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(60, 59, 59);
+
+}
