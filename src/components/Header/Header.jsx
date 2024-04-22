@@ -45,16 +45,7 @@ const Header = () => {
                             Services
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            onClick={() => setMenuOpened(false)}
-                            to="/whyus"
-                            spy={true}
-                            smooth={true}
-                        >
-                            Why us
-                        </Link>
-                    </li>
+
                     <li>
                         <Link
                             onClick={() => setMenuOpened(false)}
