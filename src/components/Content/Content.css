@@ -30,6 +30,14 @@
     background-image: url("../../assets/title.png");
 }
 
+.title-content h1 {
+    background-image: url('../../assets/title.png');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .sub-right {
     display: flex;
     flex-direction: column;

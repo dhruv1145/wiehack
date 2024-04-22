@@ -3,15 +3,23 @@ import './Service.css'
 import Content from '../Content/Content'
 import sports_img from '../../assets/sports.png'
 import grp_img from '../../assets/group.jpg'
-import league_img from '../../assets/olympics2.jpeg'
+import league_img from '../../assets/leagues.jpg'
 import analysis_img from '../../assets/performance.jpeg'
+import { motion } from 'framer-motion'
+import { Carousel } from 'react-responsive-carousel'
 
 function Service() {
     return (
         <div className="service">
 
-            <div className="title">
-                <h1>Services</h1>
+            <div className="title-1">
+                {<motion.h1
+                    initial={{ x: -1000 }}
+                    animate={{ x: [900, 0] }}
+                    transition={{
+                        duration: "2"
+                    }}
+                >Services</motion.h1>}
                 <img src={sports_img} alt="" />
             </div>
 

@@ -1,12 +1,19 @@
 import React from 'react'
 import './Content.css'
-import grp_img from '../../assets/group.jpg'
+import { motion } from 'framer-motion'
 
 function Content(props) {
     return (
         <div className='main-content'>
             <div className="title-content">
-                <h1>{props.name}</h1>
+                <motion.h1
+                    initial={{ x: 100 }}
+                    animate={{ x: 0 }}
+                    transition={{
+                        duration: "2",
+                        delay: "1"
+                    }}
+                >{props.name}</motion.h1>
             </div>
             <div className="sub-content">
                 <img src={props.image} alt="" />

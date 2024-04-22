@@ -4,22 +4,34 @@
     display: flex;
     flex-direction: column;
     gap: 10rem;
+    margin-bottom: 100px;
+    position: relative;
 }
 
 .title h1 {
     color: white;
+    margin-bottom: 10%;
 }
 
-.title img {
+.title-1 img {
     width: 550px;
     height: 250px;
     margin-bottom: 5rem;
 }
 
-.title {
+.title-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.title-1 h1 {
+    background-image: url('../../assets/title.png');
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 @media screen and (max-width: 768px) {}

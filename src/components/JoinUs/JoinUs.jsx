@@ -4,7 +4,7 @@ import './JoinUs.css'
 function JoinUs() {
     return (
         <div className="join-us">
-            <div className="title">
+            <div className="title-join">
                 <h1>JOIN US</h1>
             </div>
 
@@ -34,31 +34,14 @@ function JoinUs() {
                             className='career-input'
                             placeholder='Address'
                         />
-                        <div className="custom-select">
-                            <label htmlFor="sport">Choose Your Sport</label>
-                            <select name="choose your sport" id="sport">
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-
-                            </select>
-                        </div>
-                        <div className="custom-select">
-                            <select name="choose your sport" id="sport">
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-                                <option value="">Baketball</option>
-
-                            </select>
-                        </div>
-
-                        <button type="submit">Submit</button>
+                        <input type="text"
+                            className='career-input'
+                            placeholder='Type Your Sport'
+                        />
+                        <label htmlFor="resume">* Upload your resume</label>
+                        <input type="file" name="" id="resume"
+                        />
+                        <button className='submit-join' type="submit">Submit</button>
 
                     </div>
                 </div>

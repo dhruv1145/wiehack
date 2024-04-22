@@ -4,10 +4,6 @@
     flex-direction: column;
 }
 
-.title {
-    margin-bottom: 100px;
-}
-
 .container-join {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -30,12 +26,14 @@
     padding: 0.8rem 3rem;
     font-size: 20px;
     width: 100%;
+    color: white;
 
 }
 
 .form-career {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -50,4 +48,24 @@
 
 .career-span {
     color: #DB5324;
+}
+
+.submit-join {
+    padding: 1rem 4rem;
+    background-color: #DB5324;
+    border: 1px solid black;
+    color: white;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+
+
+.submit-join:hover {
+    background-color: #e06f4a;
+}
+
+.title-join h1 {
+    text-align: center;
+    margin-bottom: 50px;
 }
