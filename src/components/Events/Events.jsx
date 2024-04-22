@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Events.css'
 import { SlCalender } from "react-icons/sl";
-import axios from 'axios';
+import { axios } from 'axios';
 
 function Events() {
 
