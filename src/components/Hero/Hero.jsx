@@ -7,7 +7,7 @@ import calories from "../../assets/calories.png"
 import { motion } from "framer-motion"
 import NumberCounter from "number-counter";
 import Header from '../Header/Header'
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const transition = { duration: 3, type: "spring" };
@@ -68,8 +68,8 @@ const Hero = () => {
 
                 {/* hero buttons */}
                 <div className="hero-btns">
-                    <button className="btn"><a href="/contactus">Get Started</a></button>
-                    <button className="btn"><a href="/aboutus">Learn More</a></button>
+                    <button className="btn"><Link to="/contactus">Get Started</Link></button>
+                    <button className="btn"><Link to="/aboutus">Learn More</Link></button>
                 </div>
             </div>
 
