@@ -96,7 +96,7 @@ const Header = () => {
 
             <div className="button">
                 <Link className="btn"
-                    to="contact"
+                    to="/joinus"
                     spy={true}
                     smooth={true}
                 >
