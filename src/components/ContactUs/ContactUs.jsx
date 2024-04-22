@@ -13,18 +13,18 @@ function ContactUs() {
     const [message, setMessage] = useState();
     const handleSubmit = async () => {
         try {
-            if (!name || !email || !phone || !message) {
-                throw new Error("Please fill out all the details")
-            }
+            //if (!name || !email || !phone || !message) {
+            //throw new Error("Please fill out all the details")
+            //}
             let body;
-            body = { name, email, message, phone };
+            //body = { name, email, message, phone };
             setName("");
             setPhone("");
             setMessage("");
             setEmail("");
             alert("response recorded!!")
-            console.log(body);
-            const { data } = await axios.post("http://127.0.0.1:8000/athlete", body);
+            //console.log(body);
+            //const { data } = await axios.post("http://127.0.0.1:8000/athlete", body);
         } catch (err) {
             throw new Error(err.message);
         }
