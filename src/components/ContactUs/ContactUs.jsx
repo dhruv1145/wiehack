@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { motion } from 'framer-motion'
-import axios from 'axios';
+import { axios } from 'axios';
 
 function ContactUs() {
     const [name, setName] = useState();
