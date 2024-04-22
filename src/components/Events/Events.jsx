@@ -9,7 +9,7 @@ function Events() {
 
 
 
-    {/*useEffect(async () => {
+    /*useEffect(async () => {
         try {
             const config = {
                 headers: {
@@ -21,7 +21,7 @@ function Events() {
         } catch (err) {
             throw new Error(err.message);
         }
-    }, [])*/}
+    }, [])*/
     return (
         <div className="events">
             <div className="container">
