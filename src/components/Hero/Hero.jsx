@@ -60,7 +60,7 @@ const Hero = () => {
                     </div>
                     <div>
                         <span>
-                            <NumberCounter end={50} delay={2} preFix="+" />
+                            <NumberCounter end={20} delay={2} preFix="+" />
                         </span>
                         <span>Sports</span>
                     </div>
