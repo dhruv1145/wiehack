@@ -1,6 +1,7 @@
 import React from 'react'
 import './Content.css'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Content(props) {
     return (
@@ -19,7 +20,7 @@ function Content(props) {
                 <img src={props.image} alt="" />
                 <div className="sub-right">
                     <p>{props.text}</p>
-                    <button><a href="">Enquiry</a></button>
+                    <button><Link to="/contactus">Enquiry</Link></button>
                 </div>
 
             </div>

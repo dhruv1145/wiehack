@@ -4,7 +4,7 @@
 
 .container {
     border: 2px solid #DB5324;
-    height: 500px;
+    height: 110vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 .event-calender {
     margin-top: 20%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
@@ -37,5 +37,13 @@
 @media screen and (max-width: 767px) {
     .container {
         width: 400px;
+    }
+
+    .events {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
     }
 }

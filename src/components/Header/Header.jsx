@@ -10,7 +10,8 @@ const Header = () => {
     const [menuOpened, setMenuOpened] = useState(false);
     return (
         <div className="header" id="header">
-            <img src={logo} alt="logo here" className="logo" />
+            <Link to="/"><img src={logo} alt="logo here" className="logo" /></Link>
+
             {(menuOpened === false && mobile === true) ? (
                 <div
                     style={{ backgroundColor: "var(--appColor)", padding: "0.5rem", borderRadius: "5px" }}
