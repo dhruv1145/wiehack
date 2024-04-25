@@ -1,4 +1,8 @@
 .contact-page {
+    background-image: url('../../assets/athelete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     color: white;
     display: flex;
     flex-direction: column;
@@ -14,7 +18,7 @@
 }
 
 .left-2 {
-    background-color: black;
+    background-color: rgb(red, green, blue);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,10 +27,9 @@
 }
 
 .right-2 {
-    background-color: #f43716;
+    background-color: rgb(red, green, blue);
     height: 80vh;
     display: flex;
-    flex-direction: column;
 }
 
 
@@ -36,6 +39,7 @@
     justify-content: center;
     margin-left: 30%;
     gap: 3rem;
+    margin-left: 300px;
 }
 
 .right-content .credentials {

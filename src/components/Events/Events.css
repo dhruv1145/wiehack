@@ -4,7 +4,7 @@
 
 .container {
     border: 2px solid #DB5324;
-    height: 110vh;
+    height: 100%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    margin-bottom: 50px;
 }
 
 .calender svg {
@@ -24,13 +25,19 @@
 }
 
 .title {
+
     display: flex;
     flex-direction: column;
-
+    background-color: #DB5324;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 22px;
 }
 
 .title h2 {
-    color: #DB5324;
+    color: white;
+
 
 }
 

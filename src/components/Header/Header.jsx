@@ -89,6 +89,17 @@ const Header = () => {
                         </Link>
                     </li>
 
+                    {<li>
+                        <Link
+                            onClick={() => setMenuOpened(false)}
+                            to="/programs"
+                            spy={true}
+                            smooth={true}
+                        >
+                            Our Programs
+                        </Link>
+                    </li>}
+
                 </ul>
             )
 

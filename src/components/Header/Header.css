@@ -1,6 +1,7 @@
-.header {
+#header {
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
     align-items: center;
 }
 
@@ -8,10 +9,10 @@
     width: 10rem;
     height: 6rem;
     margin: 10px;
+
 }
 
 .header-menu {
-    margin-right: 10%;
     list-style: none;
     display: flex;
     align-items: center;
@@ -19,11 +20,8 @@
     color: white;
 }
 
-.header-menu li {
-    gap: 2rem;
-}
-
 .button {
+    margin-left: 200px;
     margin-right: 10px;
 }
 

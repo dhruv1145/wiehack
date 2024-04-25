@@ -9,6 +9,7 @@ import Events from './components/Events/Events'
 import JoinUs from './components/JoinUs/JoinUs'
 import About from './components/AboutUs/About'
 import Whyus from './components/whyUs/Whyus'
+import Program from './components/Program-component/Program'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +25,7 @@ function App() {
         <Route element={<Events />} path='events' />
         <Route element={<ContactUs />} path='contactus' />
         <Route element={<JoinUs />} path='joinus' />
+        <Route element={<Program />} path='programs' />
       </Routes>
     </BrowserRouter>
   )

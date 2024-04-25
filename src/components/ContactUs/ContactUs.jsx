@@ -7,22 +7,39 @@ import { motion } from 'framer-motion'
 //import { axios } from 'axios';
 
 function ContactUs() {
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [phone, setPhone] = useState();
-    const [message, setMessage] = useState();
-    const handleSubmit = async () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [message, setMessage] = useState('');
+    const handleSubmit = async (e) => {
+
         try {
+            e.preventDefault();
             //if (!name || !email || !phone || !message) {
             //throw new Error("Please fill out all the details")
             //}
             let body;
-            //body = { name, email, message, phone };
-            setName("");
-            setPhone("");
-            setMessage("");
-            setEmail("");
-            alert("response recorded!!")
+            body = { name, email, message, phone };
+            const res = await fetch("/athlete", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name, email, phone, message
+                })
+
+
+            });
+
+            const data = await res.json();
+
+            window.alert("Registeration successful")
+
+            setName('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
             //console.log(body);
             //const { data } = await axios.post("http://127.0.0.1:8000/athlete", body);
         } catch (err) {
@@ -49,7 +66,7 @@ function ContactUs() {
                             duration: '1'
                         }}
                     >Feel Free To Write !</motion.h1>
-                    <div className="form">
+                    <form method="POST" className="form">
                         <input type="text"
                             placeholder='Name'
                             value={name}
@@ -71,7 +88,7 @@ function ContactUs() {
                             onChange={(e) => setMessage(e.target.value)}
                         />
                         <button className='submit-button' type="submit" onClick={handleSubmit}>Submit</button>
-                    </div>
+                    </form>
                 </div>
                 <div className="right-2">
                     <div className="right-content">

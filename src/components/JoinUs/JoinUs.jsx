@@ -9,23 +9,35 @@ function JoinUs() {
     const [sport, setSport] = useState("");
     const handleSubmit = async () => {
         try {
+
+
+            if (!name || !email || !phone || !address || !sport) {
+                alert("fill out all details")
+            }
+
+            let body;
+            body = { name, email, phone, address, sport };
+
+            const res = await fetch("/joinus", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name, email, phone, address, sport, resume
+                })
+            });
+
             setName("")
             setEmail("")
             setPhone("")
             setSport("")
             setAddress("")
-            alert("response recorded!!")
-            if (!name || !email || !phone || !address || !sport) {
-                throw new Error("Please fill out all the details")
-            }
-            const config = {
-                headers: {
-                    "Content-type": "application/json"
-                }
-            }
-            let body;
-            body = { name, email, phone, address, sport };
-            const { data } = await axios.post("http://127.0.0.1:8000/athlete", body, config);
+
+            const data = await res.json();
+
+            alert("Registeration successful")
+
         } catch (err) {
             throw new Error(err.message);
         }
