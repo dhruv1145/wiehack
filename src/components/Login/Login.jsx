@@ -8,13 +8,13 @@ function Login() {
 
     const handleSubmitt = (e) => {
         e.preventDefault();
-        axios.post('/login', { email, password })
-            .then(result => {
-                console.log(result)
-                if (result.data === 'success') {
-                    alert('login')
-                }
-            })
+        // axios.post('/login', { email, password })
+        //     .then(result => {
+        //         console.log(result)
+        //         if (result.data === 'success') {
+        //             alert('login')
+        //         }
+        //     })
 
     };
     return (
