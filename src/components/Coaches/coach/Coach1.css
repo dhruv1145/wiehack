@@ -89,15 +89,15 @@ body {
     text-transform: uppercase;
 }
 
-input {
+.container-9 input {
     display: none;
 }
 
-input:checked+label {
+.container-9 input:checked+label {
     width: 600px;
 }
 
-input:checked+label .description {
+.container-9 input:checked+label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }

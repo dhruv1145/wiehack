@@ -11,8 +11,7 @@ import About from './components/AboutUs/About'
 import Whyus from './components/whyUs/Whyus'
 import Program from './components/Program-component/Program'
 import Login from './components/Login/Login'
-import Coach from './components/Coaches/coach/Coach'
-import Coaches from './components/Coaches/Coaches'
+
 import Talent from './components/Talent/Talent'
 import Coach1 from './components/Coaches/coach/Coach1'
 
