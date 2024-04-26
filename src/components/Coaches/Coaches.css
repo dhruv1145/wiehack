@@ -1,0 +1,13 @@
+.coaches {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.group-2 {
+    display: flex;
+    gap: 3rem;
+}

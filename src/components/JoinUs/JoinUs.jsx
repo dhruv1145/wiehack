@@ -7,36 +7,40 @@ function JoinUs() {
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
     const [sport, setSport] = useState("");
-    const handleSubmit = async () => {
+
+    const handleSubmit = async (e) => {
         try {
+            e.preventDefault();
 
-
-            if (!name || !email || !phone || !address || !sport) {
-                alert("fill out all details")
-            }
+            // if (!name || !email || !phone || !address || !sport) {
+            //     alert("fill out all details");
+            // }
 
             let body;
             body = { name, email, phone, address, sport };
 
-            const res = await fetch("/joinus", {
+            const res = await fetch("/coach", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    name, email, phone, address, sport, resume
+                    name, email, phone, address, sport
                 })
             });
 
+            const data = await res.json();
+
+            alert("Registeration successful");
             setName("")
             setEmail("")
             setPhone("")
             setSport("")
             setAddress("")
 
-            const data = await res.json();
 
-            alert("Registeration successful")
+
+
 
         } catch (err) {
             throw new Error(err.message);

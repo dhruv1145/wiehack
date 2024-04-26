@@ -20,6 +20,7 @@ function ContactUs() {
             //}
             let body;
             body = { name, email, message, phone };
+
             const res = await fetch("/athlete", {
                 method: "POST",
                 headers: {
@@ -28,18 +29,16 @@ function ContactUs() {
                 body: JSON.stringify({
                     name, email, phone, message
                 })
-
-
             });
 
             const data = await res.json();
 
-            window.alert("Registeration successful")
+            window.alert("Registeration successful");
 
-            setName('');
-            setEmail('');
-            setPhone('');
-            setMessage('');
+            setName("");
+            setEmail("");
+            setPhone("");
+            setMessage("");
             //console.log(body);
             //const { data } = await axios.post("http://127.0.0.1:8000/athlete", body);
         } catch (err) {
@@ -83,7 +82,7 @@ function ContactUs() {
                             onChange={(e) => setPhone(e.target.value)}
                         />
                         <input type="text"
-                            placeholder='Type Your Message Here....'
+                            placeholder='Password'
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />

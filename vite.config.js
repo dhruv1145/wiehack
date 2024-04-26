@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/athlete': "http://localhost:3000",
-      '/joinus': "http://localhost:3000",
+      '/coach': "http://localhost:3000",
     },
   },
   plugins: [react()],

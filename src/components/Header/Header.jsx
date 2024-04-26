@@ -100,6 +100,17 @@ const Header = () => {
                         </Link>
                     </li>}
 
+                    <li>
+                        <Link
+                            onClick={() => setMenuOpened(false)}
+                            to="/ourcoaches"
+                            spy={true}
+                            smooth={true}
+                        >
+                            Coaches
+                        </Link>
+                    </li>
+
                 </ul>
             )
 
@@ -107,11 +118,11 @@ const Header = () => {
 
             <div className="button">
                 <Link className="btn"
-                    to="/joinus"
+                    to="/login"
                     spy={true}
                     smooth={true}
                 >
-                    Join now
+                    Sign In
                 </Link>
             </div>
         </div>

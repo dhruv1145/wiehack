@@ -1,0 +1,32 @@
+.coach-details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: white;
+
+}
+
+.coach-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.coach-profile {
+    background-color: orangered;
+    padding: 20px;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 22px;
+}
+
+.coach-main img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 150px;
+}

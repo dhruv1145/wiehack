@@ -10,6 +10,9 @@ import JoinUs from './components/JoinUs/JoinUs'
 import About from './components/AboutUs/About'
 import Whyus from './components/whyUs/Whyus'
 import Program from './components/Program-component/Program'
+import Login from './components/Login/Login'
+import Coach from './components/Coaches/coach/Coach'
+import Coaches from './components/Coaches/Coaches'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +29,8 @@ function App() {
         <Route element={<ContactUs />} path='contactus' />
         <Route element={<JoinUs />} path='joinus' />
         <Route element={<Program />} path='programs' />
+        <Route element={<Login />} path='login' />
+        <Route element={<Coaches />} path='ourcoaches' />
       </Routes>
     </BrowserRouter>
   )
