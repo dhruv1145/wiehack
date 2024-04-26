@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import { motion } from 'framer-motion'
-//import { axios } from 'axios';
+
 
 function ContactUs() {
     const [name, setName] = useState('');
@@ -15,9 +15,7 @@ function ContactUs() {
 
         try {
             e.preventDefault();
-            //if (!name || !email || !phone || !message) {
-            //throw new Error("Please fill out all the details")
-            //}
+
             let body;
             body = { name, email, message, phone };
 
@@ -39,8 +37,7 @@ function ContactUs() {
             setEmail("");
             setPhone("");
             setMessage("");
-            //console.log(body);
-            //const { data } = await axios.post("http://127.0.0.1:8000/athlete", body);
+
         } catch (err) {
             throw new Error(err.message);
         }
@@ -48,11 +45,14 @@ function ContactUs() {
     }
     return (
         <div className='contact-page'>
+
             <div className="title-contact">
+
                 <motion.h1>Contact Us</motion.h1>
             </div>
 
             <div className="contact-content">
+
                 <div className="left-2">
                     <motion.h1
                         initial={{

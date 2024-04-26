@@ -13,6 +13,8 @@ import Program from './components/Program-component/Program'
 import Login from './components/Login/Login'
 import Coach from './components/Coaches/coach/Coach'
 import Coaches from './components/Coaches/Coaches'
+import Talent from './components/Talent/Talent'
+import Coach1 from './components/Coaches/coach/Coach1'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,7 +32,8 @@ function App() {
         <Route element={<JoinUs />} path='joinus' />
         <Route element={<Program />} path='programs' />
         <Route element={<Login />} path='login' />
-        <Route element={<Coaches />} path='ourcoaches' />
+        <Route element={<Coach1 />} path='ourcoaches' />
+        <Route element={<Talent />} path='talent' />
       </Routes>
     </BrowserRouter>
   )
